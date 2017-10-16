@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pomodoro Timer</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/pomodoro.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+	<h1 class="text-center">Pomodoro</h1>
+</header>
+<div class="container-fluid" id="inputs">
+	<div class="row">
+		<div class="col-xs-6">
+			<span class="top-text">Break Length</span>
+		</div>
+
+		<div class="col-xs-6">
+			<span class="top-text">Work Length</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<input id="decreaseNumber" type="button" value="-" class="btn btn-default">
+			<input id="brkBox" type="text" value="5">
+			<input id="increaseNumber" type="button" value="+" class="btn btn-default">
+		</div>
+
+		<div class="col-xs-6">
+			<input id="decreaseNumber2" type="button" value="-" class="btn btn-default">
+			<input id="durationBox" type="text" value="25">
+			<input id="increaseNumber2" type="button" value="+" class="btn btn-default">
+		</div>
+	</div>
+</div>
+<div class="container-fluid" id="circleDiv">	
+	<div class="row">
+		<div id="timeDiv"><span id="time">25:00</span></div>
+	</div>
+
+</div>
+<div class="container-fluid">
+	<div class="row text-center">
+		<input type='button' class="btn btn-default" value="Reset" id="reset" disabled="disabled">
+	</div>
+</div>
+
+<audio src="files/alarm_beep.wav" autostart="false" width="0" height="0" id="sound1" enablejavascript="true"></audio>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/pomodoro.js"></script>
+</body>
+</html>

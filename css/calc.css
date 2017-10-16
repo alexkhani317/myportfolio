@@ -1,0 +1,60 @@
+    #input_txt,#input_txt2{
+        background-color: #1dabff;
+        color:#fff; 
+        border:0px;
+        border-radius:0px;
+        font-size:20px;
+        text-align:right;
+    }
+    .form-control[disabled], .form-control[readonly], fieldset[disabled] .formcontrol{
+        border:0px;
+    }
+    .panel-info{
+        border-color:#fff;
+    }
+    .pb-calc-container {
+        font-family: Lato;
+    }
+
+    .pb-calc-btn {
+        font-size: 20px;
+       background-color:transparent;  
+       color:#fff; 
+    }
+
+    .pb-calc-btn:hover{
+        color:#fff;
+    }
+
+      .col-md-12 .row .col-xs-3{
+        padding:0;
+        border-radius: 10px;
+       background-color:#50beff;  
+
+      }
+
+      .col-md-12 .row .col-xs-3:hover{
+        border:2px solid #fff;
+        color:#fff; 
+        margin-bottom:-20px;
+      }
+
+      .col-md-12 .row .nob{
+        border:0px;
+        border-radius: 10px;
+        background-color:transparent; 
+      }
+
+    .pb-calc-panel-body {
+        padding-bottom: 0;
+        text-align: center;
+
+    }
+    .btn.focus, .btn:focus, .btn:hover{
+        color:#fff;
+    }
+    @media(min-width:768px){
+        .pb-calc-panel-body {
+            width:300px;
+        }
+    }

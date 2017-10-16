@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='css/calc.css'>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    
+    <script type="text/javascript" src="js/math.js"></script>
+    <script type="text/javascript" src="js/calc.js"></script>
+    
+
+
+  
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Calculator</h1>
+</div>
+
+<!-- Calculator - START -->
+<form name="Calc">
+<div class="container pb-calc-container">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+            
+                <div class="panel-body pb-calc-panel-body">
+                    <input type="text" class="form-control" placeholder="" name="Input" id="input_txt" disabled="disabled">
+                    <input type="text" class="form-control" name="Input2" id="input_txt2" disabled="disabled">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row" style="padding-bottom: 5px;">
+                                <div class="col-xs-3 col-sm-3 col-md-3 nob">
+                                   
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 nob">
+                                    
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value = ''" type="button">C</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" id="backspace" type="button"><span class="fa fa-arrow-circle-o-left"></span></button>
+                                </div>
+                            </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row" style="padding-bottom: 5px;">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '%'" type="button">%</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '('" type="button">(</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += ')'" type="button">)</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '/'" type="button">/</button>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 5px;">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn"onclick="Calc.Input.value += '7'" type="button">7</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn"onclick="Calc.Input.value += '8'" type="button">8</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn"onclick="Calc.Input.value += '9'" type="button">9</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '*'" type="button">*</button>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 5px;">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '4'" type="button">4</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '5'" type="button">5</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '6'" type="button">6</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '-'" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 5px;">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '1'" type="button">1</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '2'" type="button">2</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '3'" type="button">3</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '+'" type="button">+</button>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 5px;">
+                                <div class="col-xs-3 col-sm-3 col-md-3 nob">
+                                     
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '0'" type="button">0</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" onclick="Calc.Input.value += '.'" type="button">.</button>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <button class="btn pb-calc-btn" id="equalSign" type="button"><strong>=</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+<!-- Calculator - END -->
+
+</div>
+
+</body>
+</html>
